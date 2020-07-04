@@ -1,0 +1,45 @@
+/* simple - enter transition 300ms, exit 150ms */
+.fades-appear,
+.fades-enter {
+    opacity: 0;
+    z-index: 1;
+}
+.fades-appear-active,
+.fades-enter.fades-enter-active {
+    opacity: 1;
+    transition: opacity 300ms linear 150ms;
+}
+
+.fades-exit {
+    opacity: 1;
+}
+
+.fades-exit.fades-exit-active {
+    opacity: 0;
+    transition: opacity 150ms linear;
+}
+
+
+.slides-appear,
+.slides-enter {
+    opacity: 0;
+    z-index: 1;
+    left: 90vw;
+}
+.slides-appear-active,
+.slides-enter.slides-enter-active {
+    opacity: 1;
+    left: 0px;
+    transition: all 300ms linear 150ms;
+}
+
+.slides-exit {
+    opacity: 1;
+    left: 0px;
+}
+
+.slides-exit.slides-exit-active {
+    opacity: 0;
+    left: 90vw;
+    transition: all 150ms linear;
+}

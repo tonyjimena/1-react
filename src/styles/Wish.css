@@ -1,0 +1,74 @@
+/* WISHLIST */
+
+.wish-container {
+    margin: 20px;
+    padding: 20px;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 5px;
+    background: rgba(128, 128, 128, 0.226);
+}
+
+.wish-button {
+    height: 35px;
+    border: 1px solid rgba(128, 128, 128, 0.589);
+    transition: all 0.3s ease;
+}
+
+.wish-button:hover {
+    background: rgba(128, 128, 128, 0.226);
+}
+
+.wish-input__fieldset {
+    height: auto;
+    padding: 10px;
+}
+
+.wish-input__input {
+    outline: none;
+    padding: 2px 8px;
+    border: 2px solid #000;
+    width: 85%;
+    height: 35px;
+}
+
+.wish-input__input:placeholder-shown {
+    border-color: rgba(64, 64, 255, 0.678);
+}
+
+.wish-list {
+    list-style: none;
+    text-align: right;
+    padding: 0px;
+    border: 2px solid #6c6c6c;
+}
+
+.wish-list__label {
+    text-decoration-line: inherit;
+    margin: 25px;
+}
+
+.wish-list__item {
+    transition: all 0.5s ease-in;
+}
+
+.wish-list__item--done {
+    text-decoration-line: line-through;
+}
+
+.wish-list__item--warning {
+    background: rgba(255, 255, 0, 0.432);
+}
+
+.wish-list__item--danger {
+    background: #ff000061;
+}
+
+.wish-list__checkbox {
+    margin: 15px;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
